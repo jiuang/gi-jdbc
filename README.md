@@ -4,17 +4,17 @@
 [![Bintray](https://api.bintray.com/packages/p6spy/maven/p6spy%3Ap6spy/images/download.svg) ](https://bintray.com/p6spy/maven/p6spy%3Ap6spy/_latestVersion)
 
 # Introduction
-* gi-jdbc (gannalyo intercept jdbc) is a light weight application.
+* gi-jdbc (gannalyo intercept jdbc) is a light weight and powerful application for intercepting JDBC operations.
 * Reference the [P6Spy](https://github.com/p6spy/p6spy) project.
 
 
 # Functions
-* To intercept JDBC operations.
+* To intercept JDBC operations seamlessly.
 * To do something around JDBC operations. 
 
 
 # Purpose
-* To hope that can give help to some developers who want to do something around JDBC operations.
+* To hope that can give help to some developers who want to do something around JDBC operations, like monitoring, log and the like.
 
 
 # Instruction
