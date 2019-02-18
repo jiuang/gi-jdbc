@@ -9,7 +9,7 @@
 
 
 # Functions
-* To intercept JDBC operations.
+* To intercept JDBC operations seamlessly.
 * To do something around JDBC operations. 
 
 
