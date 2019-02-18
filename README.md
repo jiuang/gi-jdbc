@@ -14,7 +14,7 @@
 
 
 # Purpose
-* To hope that can give help to some developers who want to do something around JDBC operations.
+* To hope that can give help to some developers who want to do something around JDBC operations, like monitoring, log and the like.
 
 
 # Instruction
