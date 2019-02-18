@@ -29,12 +29,15 @@ public class Driver implements java.sql.Driver {
         return url != null && url.startsWith("jdbc:");
     }
 
+    // To store a global list for drivers.
+    private static final List<java.sql.Driver> driverList = collectRegisteredDrivers();
+
     /**
      * To collect all drivers which come from 'java.sql.DriverManager.getDrivers()'.
      *
      * @return drivers.
      */
-    static List<java.sql.Driver> registeredDrivers() {
+    static List<java.sql.Driver> collectRegisteredDrivers() {
         List<java.sql.Driver> driverList = new ArrayList<>();
         for (Enumeration<java.sql.Driver> driverEnumeration = DriverManager.getDrivers(); driverEnumeration.hasMoreElements(); ) {
             driverList.add(driverEnumeration.nextElement());
@@ -75,7 +78,7 @@ public class Driver implements java.sql.Driver {
 
     protected java.sql.Driver findPassthru(String url) throws SQLException {
         java.sql.Driver passthru = null;
-        for (java.sql.Driver driver : registeredDrivers()) {
+        for (java.sql.Driver driver : driverList) {
             try {
                 if (driver.acceptsURL(url)) {
                     passthru = driver;
